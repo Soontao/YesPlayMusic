@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   schedule:
     - cron: '32 0 * * *'
+  workflow_dispatch:
 
 jobs:
   deploy-nightly:
@@ -37,4 +38,4 @@ jobs:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_ORG }}/${{ secrets.DOCKERHUB_REPOSITORY }}:nightly
+            ${{ secrets.DOCKERHUB_ORG }}/${{ secrets.DOCKERHUB_REPOSITORY }}:latest
