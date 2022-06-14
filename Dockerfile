@@ -33,7 +33,7 @@ RUN echo $'server { \n\
   proxy_set_header  X-Forwarded-For $remote_addr; \n\
   proxy_set_header  X-Forwarded-Host $remote_addr; \n\
   proxy_set_header  X-NginX-Proxy true; \n\
-  proxy_pass        http://localhost:3000/; \n\
+  proxy_pass        http://api:3000/; \n\
   } \n\
   }' > /etc/nginx/conf.d/default.conf
 
@@ -43,4 +43,4 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/m
 
 COPY --from=build /app/dist /usr/share/nginx/html
 
-CMD nginx ; exec npx NeteaseCloudMusicApi
+CMD nginx
