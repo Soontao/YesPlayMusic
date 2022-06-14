@@ -1,9 +1,10 @@
+version: '2'
 services:
   YesPlayMusic:
-    build:
-      context: .
-    image: yesplaymusic
-    container_name: YesPlayMusic
+    image: thedockerimages/yesplaymusic
     ports:
-      - 80:80
+      - "23480:80"
+    restart: always
+  api:
+    image: thedockerimages/cloud-music-api
     restart: always
