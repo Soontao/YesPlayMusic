@@ -211,14 +211,14 @@
             <option value="16">
               {{ $t('settings.lyricFontSize.small') }} - 16px
             </option>
-            <option value="22">
-              {{ $t('settings.lyricFontSize.medium') }} - 22px
-            </option>
             <option value="28">
-              {{ $t('settings.lyricFontSize.large') }} - 28px
+              {{ $t('settings.lyricFontSize.medium') }} - 28px
             </option>
             <option value="36">
-              {{ $t('settings.lyricFontSize.xlarge') }} - 36px
+              {{ $t('settings.lyricFontSize.large') }} - 36px
+            </option>
+            <option value="48">
+              {{ $t('settings.lyricFontSize.xlarge') }} - 48px
             </option>
           </select>
         </div>

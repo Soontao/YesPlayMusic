@@ -291,7 +291,7 @@ export default {
     },
     lyricFontSize() {
       return {
-        fontSize: `${this.$store.state.settings.lyricFontSize || 28}px`,
+        fontSize: `${this.$store.state.settings.lyricFontSize || 36}px`,
       };
     },
     noLyric() {
