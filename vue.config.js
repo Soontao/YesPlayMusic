@@ -21,13 +21,14 @@ module.exports = {
     },
   },
   pwa: {
-    name: 'YesPlayMusic',
+    name: 'Yes Play Music',
     iconPaths: {
       favicon32: 'img/icons/favicon-32x32.png',
     },
     themeColor: '#ffffff00',
     manifestOptions: {
       background_color: '#335eea',
+      display: 'fullscreen',
     },
     // workboxOptions: {
     //   swSrc: "dev/sw.js",
