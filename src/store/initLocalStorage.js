@@ -13,7 +13,7 @@ let localStorage = {
     musicLanguage: 'all',
     appearance: 'auto',
     musicQuality: 320000,
-    lyricFontSize: 36,
+    lyricFontSize: 3,
     outputDevice: 'default',
     showPlaylistsByAppleMusic: true,
     enableUnblockNeteaseMusic: true,

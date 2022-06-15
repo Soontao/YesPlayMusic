@@ -208,17 +208,17 @@
         </div>
         <div class="right">
           <select v-model="lyricFontSize">
-            <option value="16">
-              {{ $t('settings.lyricFontSize.small') }} - 16px
+            <option value="1">
+              {{ $t('settings.lyricFontSize.small') }} - 1rem
             </option>
-            <option value="28">
-              {{ $t('settings.lyricFontSize.medium') }} - 28px
+            <option value="2">
+              {{ $t('settings.lyricFontSize.medium') }} - 2rem
             </option>
-            <option value="36">
-              {{ $t('settings.lyricFontSize.large') }} - 36px
+            <option value="3">
+              {{ $t('settings.lyricFontSize.large') }} - 3rem
             </option>
-            <option value="48">
-              {{ $t('settings.lyricFontSize.xlarge') }} - 48px
+            <option value="4">
+              {{ $t('settings.lyricFontSize.xlarge') }} - 4rem
             </option>
           </select>
         </div>
@@ -837,7 +837,7 @@ export default {
     },
     lyricFontSize: {
       get() {
-        if (this.settings.lyricFontSize === undefined) return 28;
+        if (this.settings.lyricFontSize === undefined) return 3;
         return this.settings.lyricFontSize;
       },
       set(value) {

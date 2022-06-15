@@ -291,7 +291,7 @@ export default {
     },
     lyricFontSize() {
       return {
-        fontSize: `${this.$store.state.settings.lyricFontSize || 36}px`,
+        fontSize: `${this.$store.state.settings.lyricFontSize || 3}rem`,
       };
     },
     noLyric() {
@@ -543,7 +543,7 @@ export default {
 
     .title {
       margin-top: 8px;
-      font-size: 1.4rem;
+      font-size: 2.4rem;
       font-weight: 600;
       opacity: 0.88;
       display: -webkit-box;
@@ -575,8 +575,8 @@ export default {
         }
 
         .svg-icon {
-          height: 18px;
-          width: 18px;
+          height: 2.5vh;
+          width: 2.5vh;
         }
       }
     }
@@ -612,8 +612,8 @@ export default {
 
       .svg-icon {
         opacity: 0.38;
-        height: 14px;
-        width: 14px;
+        height: 3vh;
+        width: 3vh;
       }
 
       .active .svg-icon {
@@ -630,15 +630,15 @@ export default {
         }
 
         button#play .svg-icon {
-          height: 28px;
-          width: 28px;
+          height: 4.5vh;
+          width: 4.5vh;
           padding: 2px;
         }
 
         .svg-icon {
           opacity: 0.88;
-          height: 22px;
-          width: 22px;
+          height: 4vh;
+          width: 4vh;
         }
       }
     }
@@ -771,8 +771,8 @@ export default {
   .svg-icon {
     color: var(--color-text);
     padding-top: 5px;
-    height: 22px;
-    width: 22px;
+    height: 4vh;
+    width: 4vh;
   }
 
   &:hover {
